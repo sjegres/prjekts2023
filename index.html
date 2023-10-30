@@ -28,10 +28,10 @@
         <div id='content'>
             <div class="login">
                 <form action='proc.php' method='POST'>
-                    <input name='login' type="text" placeholder="login"/>
-                    <input name='password' type="password" placeholder="parole"/>
+                    <input onchange="enableButton()" id='loginName' name='login' type="text" placeholder="login"/>
+                    <input id='loginPassword' onchange="enableButton()" name='password' type="password" placeholder="parole"/>
                     <br/><br/>
-                    <button type='submit' class="myButton">LOGIN</button>
+                    <button id='login' disabled type='submit' class="myButton">LOGIN</button>
                 </form>
             </div>
         </div>
@@ -43,7 +43,7 @@
                     <input name='login' type="text" placeholder="login"/>
                     <input name='password' type="password" placeholder="parole"/>
                     <br/><br/>
-                    <button type='submit' class="myButton">LOGIN</button>
+                    <button  type='submit' class="myButton">LOGIN</button>
                 </form>
             </div>
         </div>
